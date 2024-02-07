@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlay_dark_50"
+    android:theme="@style/ThemeMaterial">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/_30sdp"
+        android:paddingStart="@dimen/_30sdp">
+
+        <ImageView
+            android:id="@+id/img_warning"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@drawable/img_anim_warning"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_regular"
+            android:gravity="center"
+            android:text="@string/warning_title"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/nunitosans_light"
+            android:gravity="center"
+            android:text="@string/warning_desc_time"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/nunitosans_bold"
+            android:backgroundTint="@color/transparent"
+            android:text="@string/custom_btn_ok"
+            android:textSize="@dimen/_15sdp"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
