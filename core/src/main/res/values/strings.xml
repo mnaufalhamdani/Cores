@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">core</string>
+
+    <!--GLOBAL-->
+    <string name="base_btn_save">Simpan</string>
+    <string name="base_btn_add">Tambah</string>
+    <string name="base_btn_ok">OK</string>
+    <string name="base_btn_yes">Ya</string>
+    <string name="base_btn_no">Tidak</string>
+    <string name="base_btn_cancel">Batal</string>
+    <string name="base_btn_retry">Coba Lagi</string>
+    <string name="base_btn_exit">Keluar</string>
+    <string name="base_txt_loading">Mohon Tunggu..</string>
+    <string name="base_txt_warning">Peringatan</string>
+    <string name="base_ask_delete">Apakah Anda Yakin Ingin Menghapus Ini?</string>
+    <string name="base_txt_success_add">Berhasil menambahkan</string>
+    <string name="base_txt_failed_add">Gagal Menambahkan</string>
+    <string name="base_txt_success_save">Berhasil menyimpan..</string>
+    <string name="base_txt_failed_save">Gagal menyimpan..</string>
+    <string name="base_txt_empty">Tidak Ada Data</string>
+
+    <!--PERMISSION-->
+    <string name="base_permission_title">Aplikasi membutuhkan Permission ini</string>
+    <string name="base_permission_message">Mohon untuk memperbolehkan semua permission..</string>
+    <string name="base_permission_btn_text">Pengaturan</string>
+
+    <!--ERROR VIEW-->
+    <string name="base_error_reload">Klik Untuk Memuat Ulang</string>
+    <string name="base_error_permission">Masalah pada Permission</string>
+    <string name="base_error_no_connection">Tidak Ada Internet</string>
+    <string name="base_error_connection">Koneksi Internet Bermasalah</string>
+    <string name="base_error_unknown">Ooppss, Terjadi Kesalahan</string>
+    <string name="base_error_no_photo">Tambahkan minimal 1 foto</string>
+    <string name="base_error_no_data">Tidak Ada Data</string>
+    <string name="base_error_no_gps">Mohon Aktifkan GPS Anda</string>
+    <string name="base_error_field_blank">Isian ini Tidak Boleh Kosong..</string>
+
+    <!--GPS-->
+    <string name="base_gps_off">GPS Tidak Aktf</string>
+    <string name="base_gps_on">GPS Aktif</string>
+
+    <!-- snackbar -->
+    <string name="snackbar_title">Pemberitahuan:</string>
+    <string name="snackbar_action_close">Tutup</string>
+    <!-- /snackbar -->
+
+    <string name="warning_title">PERINGATAN!</string>
+    <string name="warning_desc_time">Pengaturan waktu belum otomatis, silakan atur ulang terlebih dahulu!</string>
+    <string name="warning_desc_timezone">Pengaturan zona waktu belum otomatis, silakan atur ulang terlebih dahulu!</string>
+    <string name="warning_desc_time_n_timezone">Pengaturan waktu dan zona waktu belum otomatis, silakan atur ulang terlebih dahulu!</string>
+    <string name="warning_no_simcard">Kartu SIM anda tidak terdeteksi, silakan cek kartu SIM anda terlebih dahulu</string>
+    <string name="custom_btn_ok">OK!</string>
+
+    <string name="read_more">show more</string>
+    <string name="read_less">show less</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="pemberitahuan">Pemberitahuan</string>
+</resources>

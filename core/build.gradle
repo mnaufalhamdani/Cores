@@ -1,0 +1,107 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.duakelinci.core'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    //Default
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.annotation:annotation:1.7.1'
+
+    //Navigation
+    api 'androidx.navigation:navigation-fragment-ktx:2.7.6'
+    api 'androidx.navigation:navigation-ui-ktx:2.7.6'
+
+    //GPS
+    api 'com.google.android.gms:play-services-location:21.1.0'
+
+    //Lifecycle
+    api 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+    api 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+    api 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    //Coroutine
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    testApi 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3'
+
+    //Image
+    api 'com.github.bumptech.glide:glide:4.16.0'
+    api 'id.zelory:compressor:3.0.1'
+
+    //Permission
+    api 'com.karumi:dexter:6.2.3'
+
+    //Dimen
+    api 'com.intuit.sdp:sdp-android:1.1.0'
+    api 'com.intuit.ssp:ssp-android:1.1.0'
+
+    //Log
+    api 'com.jakewharton.timber:timber:4.7.1'
+
+    //Crash
+    api 'cat.ereza:customactivityoncrash:2.4.0'
+
+    //Connection
+    api 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+    api 'com.squareup.retrofit2:retrofit:2.6.2'
+    api 'com.squareup.retrofit2:converter-gson:2.6.2'
+    api 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    api 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
+    api 'com.amitshekhar.android:android-networking:1.0.2'
+    api 'com.google.code.gson:gson:2.10'
+
+    //Database
+    api 'androidx.room:room-runtime:2.6.1'
+    api 'androidx.room:room-ktx:2.6.1'
+
+    //Injection
+    api 'io.insert-koin:koin-androidx-scope:2.2.3'
+    api 'io.insert-koin:koin-androidx-viewmodel:2.2.3'
+    api 'io.insert-koin:koin-androidx-fragment:2.2.3'
+
+    //Work Manager
+    implementation 'androidx.work:work-runtime-ktx:2.9.0'
+
+    //Test
+    testApi 'org.mockito:mockito-core:3.7.7'
+    androidTestApi 'org.mockito:mockito-android:3.7.7'
+    androidTestApi 'androidx.test:runner:1.5.2'
+    testApi 'androidx.arch.core:core-testing:2.2.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

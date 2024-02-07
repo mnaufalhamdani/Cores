@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeMaterial">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:strokeColor="@color/amber_A700"
+        app:strokeWidth="@dimen/_1sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/btn_close"
+                android:layout_alignBottom="@id/btn_close"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toStartOf="@id/btn_close"
+                android:layout_toEndOf="@id/icon"
+                android:fontFamily="@font/nunitosans_bold"
+                android:gravity="center_vertical"
+                android:text="@string/pemberitahuan"
+                android:textColor="@color/grey_600"
+                android:textSize="@dimen/_11sdp" />
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_close"
+                android:visibility="invisible"
+                app:backgroundTint="@color/white"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_toEndOf="@id/icon"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="@color/grey_600"
+                android:textSize="@dimen/_10sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/action"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/nunitosans_bold"
+                android:textColor="@color/grey_700"
+                android:textSize="@dimen/_12sdp"
+                android:textAllCaps="false"
+                android:text="asf"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>
